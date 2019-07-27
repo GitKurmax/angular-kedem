@@ -1,3 +1,4 @@
-<app-herbal-list></app-herbal-list>
+<app-herbal-bar (inputData) = "getInput($event)"></app-herbal-bar>
+<app-herbal-list [filteredData] = "inputData"></app-herbal-list>
 
 <!-- <router-outlet></router-outlet> -->
