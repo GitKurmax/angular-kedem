@@ -11,12 +11,16 @@ import { MatSortModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HerbalBarComponent } from './herbal-bar/herbal-bar.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { MatDialogModule } from "@angular/material";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
  
 @NgModule({
   declarations: [
     AppComponent,
     HerbalListComponent,
-    HerbalBarComponent
+    HerbalBarComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -26,8 +30,11 @@ import { HerbalBarComponent } from './herbal-bar/herbal-bar.component';
     MatTableModule,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule,
+    ReactiveFormsModule
   ],
+  entryComponents: [DialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
